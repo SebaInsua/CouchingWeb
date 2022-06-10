@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Insua Juan Cruz">
     <meta name="descripction" content="road to full stack dev, open to learn">
+    <meta name="viewport" content="initial-scale=1">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
@@ -19,17 +20,18 @@
 </head>
 <body>
     <!----------Header-------------->
-    <header>
-        <img src="img/android-chrome-192x192.png" alt="CoCo Icono">
-        <p>constantino coaching international</p>
-        <form>
-            <input type="email" name="email" placeholder="example@gmail.com" required>
-            <input type="password" placeholder="password" name="password" required>
-            <input class="form__login" type="submit" value="Login">
-            <a class="form__register"href="">Register</a>
+    <div class="header">
+        <p class="header__p">Constantino coaching international</p>
+        <img class="header__img" src="img/android-chrome-192x192.png" alt="CoCo Icono">
+        <form class="header__form">
+            <label class="header__form-label" for="email">Email</label>
+            <input class="header__form-input" type="email" id="email" name="email" placeholder="example@gmail.com" required>
+            <label class="header__form-label" for="password">Password</label>
+            <input class="header__form-input" type="password" id="password" name="password" placeholder="***********" required>
+            <input class="header__form-login" type="submit" value="Login">
+            <a class="header__form-register"href="">Register</a>
         </form>
-        
-    </header> 
+    </div>
     <!-----------------Section------------------>
     <section>
             <p class="p__section">aunque nada cambie <br> si yo cambio todo cambia</p>

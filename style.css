@@ -1,72 +1,80 @@
-  body{
-      margin: 0;
+   body{
+    margin: 0;
     background: rgb(248, 211, 242);
     font-family:'Times New Roman', Times, serif;
     font-size:medium;
-} 
+}  
+/* rgb(30, 29, 29) */
 /* ------------------Header-------------------- */ 
-header{
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-    height: 100px;
+.header{
+    background: rgb(30, 29, 29) ;
     display: flex;
-    justify-content: space-around;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
     align-items: center;
-    background: rgb(30, 29, 29);
+    height: 150px;
+    box-shadow: 1px 1px 100px rgb(30, 29, 29);
+    outline: 2px solid black;
 }
-header img{        
-    height: 70px;
+.header__img{
+    padding: 10px;
+    margin: auto;
+    width: 80px;
 }
-header p{                                  
-    padding-right: 10px;
-    border-right: 1px solid rgb(248, 211, 242);
-    text-transform: uppercase;
+.header__p{
+    padding: 10px;
+    margin: 20px;
+    align-self: center;
+    font-size: x-large;
     color: rgb(248, 211, 242);
+    border-right: 2px solid rgb(248, 211, 242) ;
 }
-form{                          
-    font-family: italic;
+.header__form{
+    padding: 10px;
+    margin: 20px;
+    display: flex;
+    flex-flow: row wrap;
+    min-width: 200px;
 }
-input{
-    padding: 5px;
+.header__form-label{
     color: white;
+    margin: 2px 5px 0px 5px;
+}
+.header__form-input{
+    border:none;
+    border-bottom: 2px solid white;
+    border-radius: 5%;
+    margin: 2px 5px 0px 5px;
     background: rgb(30, 29, 29);
+    color: white ;
+    
+}
+.header__form-input:focus{
+    outline: none;
+    border: none;
+    box-shadow: 2px 2px 5px 2px rgb(248, 211, 242); 
+    transition: 2s;
+}
+.header__form-login[type="submit"]{
+    margin: 2px 5px 0px 5px; ;
+    border: 1px solid white;
+    background: rgb(30, 29, 29);
+    color: white ;
+    font-family:'Times New Roman', Times, serif;
+    font-size:medium;
+}
+.header__form-login:hover{
+    color: rgb(248, 211, 242) ;
     border: 1px solid rgb(248, 211, 242);
-}
-input:focus{
-    background: black;
-}
-.form__register{
-    text-decoration: none;
-    color:white;
-}
-.form__register:hover, .form__login:hover{
-    color: rgb(248, 211, 242);
     cursor: pointer;
 }
-
+.header__form-register{
+    text-decoration: none;
+    margin: 2px 5px 0px 5px; ;
+    color:white;
+}
+.header__form-register:hover{
+    color: rgb(248, 211, 242);
+}
 /*------------------Header---------------------*/
 /*------------------Section--------------------*/
-section{
-    height: 550px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items:center;
-}
-section p{
-  font-size: xx-large ;
-}
-video{
-    border: 2px solid rgb(30, 29, 29);
-    border-radius: 20px;
-    width:600px;
-}
-.p__section {
-    margin-bottom: 0px;
-    text-align: center;
-    font-size: 30px;
-    text-transform: uppercase;
-}
-.desc {
-    margin-bottom: 20px;
-    font-size: 12px;
-}

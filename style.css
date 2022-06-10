@@ -13,29 +13,36 @@ header{
     align-items: center;
     background: rgb(30, 29, 29);
 }
-header img{
+header img{        
     height: 70px;
 }
-header p{
+header p{                                  
     padding-right: 10px;
     border-right: 1px solid rgb(248, 211, 242);
     text-transform: uppercase;
     color: rgb(248, 211, 242);
 }
-.form__input{
-    border: 1px solid white;
+form{                          
     font-family: italic;
-    color:white;
-    background: rgb(0, 0, 0);
 }
-.login{
+input{
+    padding: 5px;
     color: white;
+    background: rgb(30, 29, 29);
+    border: 1px solid rgb(248, 211, 242);
 }
-form a{
-    font-family: italic;
-    color: white;
+input:focus{
+    background: black;
+}
+.form__register{
     text-decoration: none;
+    color:white;
 }
+.form__register:hover, .form__login:hover{
+    color: rgb(248, 211, 242);
+    cursor: pointer;
+}
+
 /*------------------Header---------------------*/
 /*------------------Section--------------------*/
 section{

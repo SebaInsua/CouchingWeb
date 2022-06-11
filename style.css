@@ -3,6 +3,8 @@
     background: rgb(248, 211, 242);
     font-family:'Times New Roman', Times, serif;
     font-size:medium;
+    display: flex;
+    flex-flow: column wrap;
 }  
 /* rgb(30, 29, 29) */
 /* ------------------Header-------------------- */ 
@@ -18,16 +20,17 @@
 }
 .header__img{
     padding: 10px;
-    margin: auto;
+    margin:10px;
     width: 80px;
 }
 .header__p{
     padding: 10px;
-    margin: 20px;
+    margin-right:auto;
     align-self: center;
     font-size: x-large;
     color: rgb(248, 211, 242);
-    border-right: 2px solid rgb(248, 211, 242) ;
+    border-left: 2px solid rgb(248, 211, 242) ;
+    text-shadow: 1px 1px 15px rgb(248, 211, 242);
 }
 .header__form{
     padding: 10px;
@@ -52,29 +55,72 @@
 .header__form-input:focus{
     outline: none;
     border: none;
-    box-shadow: 2px 2px 5px 2px rgb(248, 211, 242); 
+    box-shadow: 1px 1px 5px 2px white; 
     transition: 2s;
 }
 .header__form-login[type="submit"]{
     margin: 2px 5px 0px 5px; ;
-    border: 1px solid white;
+    border: 1px solid rgb(248, 211, 242);
     background: rgb(30, 29, 29);
-    color: white ;
+    color: rgb(248, 211, 242) ;
     font-family:'Times New Roman', Times, serif;
     font-size:medium;
 }
 .header__form-login:hover{
-    color: rgb(248, 211, 242) ;
-    border: 1px solid rgb(248, 211, 242);
+    color: white ;
+    border: 1px solid white;
     cursor: pointer;
 }
 .header__form-register{
     text-decoration: none;
     margin: 2px 5px 0px 5px; ;
-    color:white;
+    color:rgb(248, 211, 242);
 }
 .header__form-register:hover{
-    color: rgb(248, 211, 242);
+    color: white;
 }
 /*------------------Header---------------------*/
 /*------------------Section--------------------*/
+.section{
+    margin: 40px;
+    padding: 40px;
+    width: 600px;
+    align-self: center;
+    display: block;
+}
+.section__card{
+    padding: 20px;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    border-radius: 10px; 
+    box-shadow: 1px 1px 50px rgb(30, 29, 29);
+    background: rgb(30, 29, 29);
+}
+.section__card-p{
+    margin: 10px;
+    font-size: x-large;
+    font-family: cursive ; 
+    color: rgb(248, 211, 242);
+}
+.author, .author a{
+    margin: 0px 0px 40px 0px;
+    font-size: medium;
+    color: rgb(248, 211, 242);
+    text-decoration: none;
+}
+.author a:hover{
+    color: white;
+    text-decoration:underline;
+}
+.section__card-video{
+    width: 400px;
+    border-radius: 10px;
+    border: 1px solid rgb(248, 211, 242) ;
+    box-shadow: none;
+    
+}
+.section__card-video:hover{
+    box-shadow: 1px 1px 20px rgb(248, 211, 242);
+    width: 500px;
+}
